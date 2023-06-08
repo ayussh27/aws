@@ -80,7 +80,7 @@ a{
                 // make API call with parameters and use promises to get response
                 //https://cc-miniproject.s3.ap-south-1.amazonaws.com/index.html
                 //https://8hf1h0ob9b.execute-api.ap-south-1.amazonaws.com/dev
-                fetch("https://8hf1h0ob9b.execute-api.ap-south-1.amazonaws.com/dev", requestOptions)
+                fetch("YOUR-API", requestOptions)
                 .then(response => response.text())
                 .then(result => alert(JSON.parse(result).body))
                 .catch(error => console.log('error', error));
